@@ -4,7 +4,7 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
-	private String emailAdress;
+	private String emailAddress;
 	private String team;
 	
 	public CricketCoach() {
@@ -12,14 +12,14 @@ public class CricketCoach implements Coach {
 	}
 	
 	
-	public String getEmailAdress() {
-		return emailAdress;
+	public String getEmailAddress() {
+		return emailAddress;
 	}
 
 
-	public void setEmailAdress(String emailAdress) {
+	public void setEmailAddress(String emailAddress) {
 		System.out.println("CricketCoach Setter email");
-		this.emailAdress = emailAdress;
+		this.emailAddress = emailAddress;
 	}
 
 
