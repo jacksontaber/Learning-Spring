@@ -9,9 +9,17 @@
 
     <!-- Define your beans here -->
     
-    <bean id="myCoach"
-    	class="springdemo.BaseballCoach"> 
+    <bean id="myFortune" 
+    	class="springdemo.HappyFortuneService">
 	</bean>
+    
+    <bean id="myCoach"
+    	class="springdemo.TrackCoach"> 
+    	<!-- Constructor injection -->
+		<constructor-arg ref="myFortune" />
+	</bean>
+	
+	
     	
     </beans>
 
