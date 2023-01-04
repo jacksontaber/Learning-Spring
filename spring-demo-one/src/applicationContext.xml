@@ -19,6 +19,11 @@
 		<constructor-arg ref="myFortune" />
 	</bean>
 	
+	<bean id="myCricketCoach"
+		class="springdemo.CricketCoach">
+		<!-- Setter injection-->
+		<property name="fortuneService" ref="myFortune" />
+	</bean>
 	
     	
     </beans>
